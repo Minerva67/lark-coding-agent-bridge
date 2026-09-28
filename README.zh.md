@@ -17,6 +17,20 @@
 - **图片 / 文件**：直接发给 bot，bridge 下载到本地后交给本机 agent 处理。
 - **卡片按钮**：`/help`、`/ws list`、`/status` 返回可点击的交互卡片。
 
+## 一键安装（推荐）
+
+打开终端，粘贴这一行，回车：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Minerva67/lark-coding-agent-bridge/main/install.sh | bash
+```
+
+它会自动完成：没有 Node 就装一份 → 把 bridge 装到你的用户目录（不需要 sudo，不会报 EACCES）→ 检查 Claude Code 是否安装并登录，没登录就当场带你登录 → 出二维码让你用飞书扫码建机器人 → 注册为开机自启的后台服务 → 自检。
+
+看到「✓ 安装完成」后，去飞书给机器人发一句话即可。想用 Codex：在命令最后的 `bash` 前面加上 `AGENT=codex `。
+
+> 下面是手动安装方式，一键安装成功的话不用看。
+
 ## 前置条件
 
 - Node.js **>= 20.12.0**

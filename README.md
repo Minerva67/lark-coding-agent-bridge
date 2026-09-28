@@ -17,6 +17,14 @@ For a product walkthrough, see the [Feishu document](https://larkcommunity.feish
 - **Images and files**: send them to the bot directly, and the bridge downloads them locally for the agent.
 - **Interactive cards**: `/help`, `/ws list`, and `/status` return cards with clickable buttons.
 
+## One-line install (recommended)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Minerva67/lark-coding-agent-bridge/main/install.sh | bash
+```
+
+Installs Node if missing, installs the bridge into your home directory (no sudo, no EACCES), makes sure Claude Code is installed **and logged in**, shows the Feishu QR code, registers the background service, and verifies it is running. Use `AGENT=codex` before `bash` for Codex.
+
 ## Prerequisites
 
 - Node.js **>= 20.12.0**
